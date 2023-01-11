@@ -1,3 +1,4 @@
+function playGame(){
 
 let randomNumber1 = Math.floor((Math.random() * 6) + 1)
 
@@ -28,3 +29,7 @@ if (randomNumber1 > randomNumber2) {
 } else {
     document.querySelector("h1").innerHTML = "Draw!"
 }
+    
+}
+
+document.querySelector("button").addEventListener("click", playGame())
